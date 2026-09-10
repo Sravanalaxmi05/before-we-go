@@ -1,10 +1,10 @@
 import {restaurant} from './knowledge.ts';
 import {assess, type Turn} from './domain.ts';
 export const terminal=(s:string)=>['completed','failed','canceled'].includes(s);
-export async function requestCall(key:string,payload:unknown,idempotencyKey:string){return request(key,'/calls',{method:'POST',headers:{'Idempotency-Key':idempotencyKey},body:JSON.stringify(payload)})}
+export async function requestCall(key:string,payload:unknown,idempotencyKey:string){return request(key,'/calls',{method:'POST',headers:{'Idempotency-Key':idempotencyKey},body:JSON.stringify(payload)},45000)}
 export async function fetchCall(key:string,id:string){if(!/^call_[A-Za-z0-9_-]+$/.test(id))throw new Error('Invalid provider call identifier');const data=await request(key,'/calls/'+id);if(data.id!==id)throw new Error('Provider response identifier mismatch');return data}
-async function request(key:string,path:string,init:RequestInit={}){
- const response=await fetch('https://api.heycall-e.com/v1'+path,{...init,headers:{Authorization:'Bearer '+key,'Content-Type':'application/json',...init.headers},signal:AbortSignal.timeout(15000)});
+async function request(key:string,path:string,init:RequestInit={},timeout=15000){
+ const response=await fetch('https://api.heycall-e.com/v1'+path,{...init,headers:{Authorization:'Bearer '+key,'Content-Type':'application/json',...init.headers},signal:AbortSignal.timeout(timeout)});
  if(!response.ok)throw new Error('CALL-E request returned HTTP '+response.status);
  const text=await response.text();if(text.length>1_000_000)throw new Error('Provider response too large');
  const data=JSON.parse(text);if(!data||!/^call_[A-Za-z0-9_-]+$/.test(data.id)||!['queued','in_progress','completed','failed','canceled'].includes(data.status))throw new Error('Invalid provider response');

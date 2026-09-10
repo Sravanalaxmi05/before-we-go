@@ -13,4 +13,4 @@ export async function body(req:Request){if(Number(req.headers.get('content-lengt
 export function textField(v:unknown,name:string,max:number){if(typeof v!=='string'||!v.trim()||v.length>max)throw new HttpError(400,'Invalid '+name);return v.trim()}
 export async function hash(s:string){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))).map(x=>x.toString(16).padStart(2,'0')).join('')}
 export function json(x:unknown,status=200){return Response.json(x,{status,headers:{'Cache-Control':'no-store'}})}
-export function failure(e:unknown){if(!(e instanceof HttpError))console.error("Application operation failed",e instanceof Error?e.name+": "+e.message:"unknown");return json({error:e instanceof HttpError?e.message:'The operation could not be completed. No automatic retry was started.'},e instanceof HttpError?e.status:503)}
+export function failure(e:unknown){return json({error:e instanceof HttpError?e.message:'The operation could not be completed. No automatic retry was started.'},e instanceof HttpError?e.status:503)}

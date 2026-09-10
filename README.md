@@ -2,7 +2,7 @@
 
 A customer enquiry triggers a callback from a disclosed restaurant AI representative. It explains a versioned fictional fact sheet, captures customer preferences and unresolved questions, and prepares a reviewed report for staff. It does not book tables, contact staff or claim live inventory.
 
-**Current status:** working synthetic evidence/review UI and server integration implementation. API authentication verified. First application call test in progress; judging access is not verified. Fictional examples are labeled and never dial a number.
+**Current status:** working synthetic evidence/review UI and server integration implementation. API authentication verified. One application call task was accepted by CALL-E but failed without a completed conversation. Its ID was recovered using the documented same-key/same-payload procedure. Successful conversation and judging access remain unverified. Fictional examples are labeled and never dial a number.
 
 ## Run locally
 
