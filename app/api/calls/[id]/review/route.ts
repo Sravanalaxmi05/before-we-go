@@ -1,0 +1,4 @@
+import {authorize,body,json,failure,HttpError} from '@/lib/server';
+import {db} from '@/lib/store';
+import {exportReview} from '@/lib/domain';
+export async function POST(req:Request,{params}:{params:Promise<{id:string}>}){try{const user=await authorize(req,true);const {id}=await params;const b=await body(req);const row=await db().prepare('SELECT result FROM calls WHERE id=? AND owner=?').bind(id,user.userId).first<{result:string|null}>();if(!row?.result)throw new HttpError(409,'Completed result not available.');let out;try{out=exportReview(JSON.parse(row.result),b.action,b.reviewed===true)}catch(e){throw new HttpError(400,(e as Error).message)}await db().prepare('UPDATE calls SET review=? WHERE id=? AND owner=?').bind(JSON.stringify(out),id,user.userId).run();return json(out)}catch(e){return failure(e)}}
