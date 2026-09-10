@@ -2,7 +2,7 @@
 
 A customer enquiry triggers a callback from a disclosed restaurant AI representative. It explains a versioned fictional fact sheet, captures customer preferences and unresolved questions, and prepares a reviewed report for staff. It does not book tables, contact staff or claim live inventory.
 
-**Current status:** working synthetic evidence/review UI and server integration implementation. API authentication verified. One application call task was accepted by CALL-E but failed without a completed conversation. Its ID was recovered using the documented same-key/same-payload procedure. Successful conversation and judging access remain unverified. Fictional examples are labeled and never dial a number.
+**Current status:** working synthetic evidence/review UI and server integration implementation. API authentication verified. One application call task was accepted by CALL-E but failed without a completed conversation. Its ID was recovered using the documented same-key/same-payload procedure. A separate minimal connectivity request also failed with no transcript. Successful conversation and judging access remain unverified. Fictional examples are labeled and never dial a number.
 
 ## Run locally
 
@@ -12,9 +12,9 @@ Copy `.env.example` to `.env.local` and configure server-only values to enable l
 
 ## Test
 
-`node --experimental-strip-types --test tests/domain.test.ts tests/claim.test.ts tests/provider.test.ts`
+Run `pnpm build`, then `node --experimental-strip-types --test tests/*.test.ts`. The built-Worker test requires the current production output. All 13 checks run without live credentials or outbound calls.
 
-The D1 claim test uses the installed Miniflare runtime to verify concurrent starts and transactional rollback. Domain tests cover provenance, wrong-speaker evidence, missing transcript and refusal. `pnpm exec tsc --noEmit` checks types.
+The D1 claim test uses the installed Miniflare runtime to verify concurrent starts and transactional rollback. Domain tests cover provenance, wrong-speaker evidence, missing transcript and refusal. The built-Worker test runs the HTTP workflow through preview, approval, mocked CALL-E dispatch, result retrieval and persisted reviewed export, using isolated D1 state and disabled external networking. `pnpm exec tsc --noEmit` checks types.
 
 ## Workflow
 
@@ -35,4 +35,6 @@ Network ambiguity locks the call for operator reconciliation; no automatic resen
 
 ## Demo honesty
 
-Sample transcripts are synthetic. A live test, when enabled, calls a consenting person role-playing a fictional restaurant. Such a test proves the workflow and integration, not actual venue accessibility or customer impact.
+Sample transcripts are synthetic. A live test, when enabled, calls a consenting person playing the CUSTOMER; CALL-E plays the fictional restaurant’s disclosed AI representative. A successful test would demonstrate the workflow, not actual venue accessibility or customer impact. No successful live conversation is currently claimed.
+
+Community contribution: [PR #430](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/430).

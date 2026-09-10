@@ -18,8 +18,8 @@ Public source: [before-we-go](https://github.com/Sravanalaxmi05/before-we-go). P
 - [x] Idea locked; exploration archived.
 - [x] Business and technical draft.
 - [x] Independent plan review addressed for offline build; live/release gates retained.
-- [ ] Fake-provider end-to-end flow.
-- [ ] Auth/persistence/state checks.
+- [x] Built-Worker HTTP workflow with fake provider and real isolated D1.
+- [x] Local auth/persistence/state checks; deployed identity access still unverified.
 - [ ] Account, credits and recipient permission configured.
 - [ ] Real application-originated call reviewed.
 - [x] Production build passed at the recorded customer-callback milestone; private deployment exists.
@@ -58,3 +58,11 @@ Current public repository and private deployment URLs are recorded above. The fa
 A second, separate minimal connectivity request was accepted and ended failed with zero transcript turns and the same undocumented attempt diagnostic. Optional locale, region, extraction schema and restaurant metadata were omitted. This narrows the investigation but does not establish a cause. No further redial is scheduled. The first attempt is user-confirmed not to have rung; no such confirmation has been collected for the second. Account number settings show no purchased number; whether a purchased number is required for the free outbound path is unverified. No number was purchased.
 
 The portable Node 24 contribution has 12 passing tests, including isolated no-network CLI lifecycle tests; community repository validation passed. Independent review fixes for stale status output are included. PR #430 is open.
+
+## Devpost draft alignment — 10 September
+
+The existing Timelords draft was renamed to Before We Go and its pitch saved; reload verified persistence. Submission remains DRAFT, 2/5 steps. Additional-info values were entered but did not persist after Save & continue; do not count them complete. The form requires personal eligibility declarations (age of majority, eligible jurisdiction, no sponsor employment), which have not been verified. Final video and live judging instructions remain absent.
+
+## Built-server workflow verification — 10 September
+
+All 13 app checks and typecheck passed. New test exercises the current production Worker over HTTP: unauthorized and wrong-origin rejection, immutable masked preview, explicit approval, single dispatch, duplicate rejection, structured result, cross-user denial, review requirement, exact persisted export and released terminal mutex. External network is disabled; this is application integration evidence, not real phone delivery or deployed judge authentication. README corrected one stale callee-role sentence.
