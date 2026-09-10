@@ -1,6 +1,6 @@
 # Customer callback role-play facts
 
-Current status is centralized in `README.md`. Two accepted requests failed without transcripts; no successful conversation exists. This sheet is for a future separately agreed rehearsal, not evidence that a call occurred. No provider-support outreach is authorized.
+Current status is centralized in `README.md`. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified. This sheet is for a future separately agreed rehearsal, not evidence that a call occurred. User-authorized provider outreach was filed as [issue #124](https://github.com/CALLE-AI/call-e-integrations/issues/124); it is OPEN with no comments as of 11 September. No provider resolution is verified.
 
 The consenting recipient is the CUSTOMER. CALL-E is the disclosed AI enquiry representative of The Courtyard, a fictional restaurant. This is a fact sheet, not scripted dialogue or permission to contact a real business.
 

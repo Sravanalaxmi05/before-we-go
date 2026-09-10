@@ -2,7 +2,7 @@
 
 Current status: see `README.md` for completed evidence and blocked requirements. Devpost is a saved draft at 2/5, not a submitted entry. Public-access and eligibility questions await the user; additional information is not saved.
 
-Draft for the confirmed customer-callback direction. Two accepted real call requests failed with zero transcript. The user confirmed the first did not ring; whether the second rang is unconfirmed. No successful conversation is verified. Check all implementation statements against the final release before submission.
+Draft for the confirmed customer-callback direction. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified. Check all implementation statements against the final release before submission.
 
 ## Inspiration
 
@@ -26,7 +26,7 @@ The published source includes the React 19 interface, Vinext Worker routes and D
 
 The intended live demonstration calls the entrant’s willing mobile. The entrant plays the CUSTOMER with an enquiry; the AI plays the fictional restaurant representative. All business information is fictional, supplied to the AI in advance and bounded. This is not a call to a real restaurant or evidence of venue/customer adoption.
 
-The CALL-E account exists and a read-only API verification returned HTTP 200. The dashboard displays 100 credits; calling capacity is unverified. Two accepted real call requests failed with zero transcript. The user confirmed the first did not ring; whether the second rang is unconfirmed. No successful conversation is verified.
+The CALL-E account exists and a read-only API verification returned HTTP 200. The dashboard displays 100 credits; calling capacity is unverified. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified.
 
 [ADD ACTUAL LIVE TEST DATE, RELEASE COMMIT, REDACTED PROOF, OBSERVED RESULT AND REVIEW CORRECTIONS.]
 

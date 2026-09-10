@@ -2,11 +2,11 @@
 
 Current status: see `README.md` for completed evidence and blocked requirements. Devpost is a saved draft at 2/5, not a submitted entry. Public-access and eligibility questions await the user; additional information is not saved.
 
-Current status: four synthetic scenarios and review/export UI work; server adapter and persisted dispatch are implemented, current verification is recorded in `README.md`. Account exists; read-only API verification returned HTTP 200. Dashboard: 100 credits, with call capacity unverified. Two accepted real call requests failed with zero transcript. The user confirmed the first did not ring; whether the second rang is unconfirmed. No successful conversation is verified. This checklist does not initiate or authorize a call.
+Current status: four synthetic scenarios and review/export UI work; server adapter and persisted dispatch are implemented, current verification is recorded in `README.md`. Account exists; read-only API verification returned HTTP 200. Dashboard: 100 credits, with call capacity unverified. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified. This checklist does not initiate or authorize a call.
 
 Public source: [before-we-go](https://github.com/Sravanalaxmi05/before-we-go). Private deployment: [Before We Go](https://before-we-go.jatindeh.chatgpt.site). Deployment does not establish judge access or successful calling.
 
-Provider-support outreach is declined. PR #430 is open; public video and judging access remain unresolved.
+User-authorized provider outreach was filed as [issue #124](https://github.com/CALLE-AI/call-e-integrations/issues/124); it is OPEN with no comments as of 11 September. No provider resolution is verified. PR #430 is open; public video and judging access remain unresolved.
 
 ## Before the live session
 
@@ -28,3 +28,14 @@ Provider-support outreach is declined. PR #430 is open; public video and judging
 - [ ] Record a public demo only after proof and publication permission; mask browser/account/phone information.
 
 Separate release gates remain judge access and ongoing credits/hosting, eligibility confirmation, public video, and final Devpost verification. These are not closed by a successful operator rehearsal.
+
+## Submission blockers — 11 September
+
+- [ ] Successful live conversation and reviewed transcript; provider issue #124 remains open without comments.
+- [ ] User decision on public access, followed by verified working judge access.
+- [ ] Entrant eligibility confirmation.
+- [ ] Public video with permitted footage and accurate synthetic/live labeling.
+- [ ] Remaining Devpost requirements completed and additional information persisted; saved draft currently 2/5.
+- [ ] Final submission and receipt verified.
+
+Use `devpost-ready-story.md` for current public narrative. Do not wait for a PR merge as though it were a submission requirement: PR #430 is already open. Provider outreach has been authorized and filed; do not describe it as prohibited or resolved.

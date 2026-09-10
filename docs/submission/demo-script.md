@@ -2,7 +2,7 @@
 
 Current status: see `README.md` for completed evidence and blocked requirements. Devpost is a saved draft at 2/5, not a submitted entry. Public-access and eligibility questions await the user; additional information is not saved.
 
-Draft only. Record the planned conversation sequence only after successful live calling is verified. The current failed attempt cannot supply conversation footage. Two accepted real call requests failed with zero transcript. The user confirmed the first did not ring; whether the second rang is unconfirmed. No successful conversation is verified. Customer is the recipient; CALL-E represents the fictional restaurant. Narrate only behavior visible in the final build.
+Draft only. Record the planned conversation sequence only after successful live calling is verified. The current failed attempt cannot supply conversation footage. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified. Customer is the recipient; CALL-E represents the fictional restaurant. Narrate only behavior visible in the final build.
 
 | Time | Footage | Narration / purpose |
 | --- | --- | --- |

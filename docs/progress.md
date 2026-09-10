@@ -70,3 +70,19 @@ All 13 app checks and typecheck passed. New test exercises the current productio
 ## Submission pack and account alignment
 
 All seven submission documents consolidated against source87b2ba6, PR430 and Devpost DRAFT2/5. Account masked key matches configured key, enabled and expires after judging; displayed balance remains100credits with zero usage charges. Public-site audience decision, personal eligibility confirmation and alternative authorized test number questions are pending. No further calls or support outreach.
+
+## User-requested fresh callback — 10 September
+
+User explicitly requested another call. Increased local application reservation limit from1to2 and restarted the local Worker to load it; the initial local budget rejection created no call record. The same new plan was then accepted and queued by CALL-E, subsequently ending failed. No automatic redial. Recipient ringing has not yet been confirmed for this attempt. There have now been three accepted provider tasks in total: two application callbacks and one minimal connectivity diagnostic.
+
+## Alternate recipient attempt
+
+User confirmed the latest application callback did not ring and authorized an alternate recipient. A short test request to the alternate was rejected with HTTP429 account_concurrency_exceeded. Same-key/same-payload checks remained rejected, including after a20second wait. All three known previous provider tasks were independently fetched and are terminal failed. No new provider task ID or conversation exists for this alternate request. Provider response identifies a default shared outbound line with one concurrent task; it does not require purchasing a number for a single free-line call. No purchase or outreach. Account line occupancy remains unresolved.
+
+## Support report authorized and filed
+
+User explicitly authorized logging the issue. Opened and verified https://github.com/CALLE-AI/call-e-integrations/issues/124 under Sravanalaxmi05, requesting investigation and release of the shared-line reservation plus safe retry guidance. Public report omits phone numbers, account email, API key, and full task/attempt IDs. Awaiting provider response; no reset or successful call claimed. This authorization supersedes the earlier no-support restriction for this diagnostic report.
+
+## 11 September — submission work while awaiting CALL-E
+
+Issue124 checked: OPEN, no comments or resolution. Contribution PR430 checked: OPEN, no reviews or hosted checks. Created and visually inspected original1200×800project cover PNG with editable SVG, fictional scenario and prototype disclosure. Submission copy consolidation underway. Live calling, public-access authorization, personal eligibility, actual demo video and final submission remain open.

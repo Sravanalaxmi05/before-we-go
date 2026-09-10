@@ -2,7 +2,7 @@
 
 [PR #430](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/430) is OPEN. No reviews or hosted checks have appeared yet. The contribution’s separate 12-test suite and community repository validator passed locally. This is distinct from the app’s 13-test suite at source commit `87b2ba6`.
 
-Public source: [before-we-go](https://github.com/Sravanalaxmi05/before-we-go). See `README.md` for overall submission status. The portable CLI has not been separately verified through a successful live conversation. Two accepted call requests failed without transcripts; the first was confirmed not to ring, and ringing for the second is unconfirmed.
+Public source: [before-we-go](https://github.com/Sravanalaxmi05/before-we-go). See `README.md` for overall submission status. The portable CLI has not been separately verified through a successful live conversation. Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified.
 
 ## Completed
 
@@ -17,4 +17,4 @@ Public source: [before-we-go](https://github.com/Sravanalaxmi05/before-we-go). S
 - [ ] Keep credentials, private contact data and raw private call artifacts out of public changes.
 - [ ] Verify final Devpost contribution link remains PR #430 before submission.
 
-Contribution guidance checked 10 September: [README](https://github.com/CALLE-AI/awesome-phone-call-agents/blob/main/README.md) and [contribution guide](https://github.com/CALLE-AI/awesome-phone-call-agents/blob/main/CONTRIBUTING.md). Local validation does not mean the PR has been reviewed or merged. No further external writes or outreach are authorized by this document.
+Contribution guidance checked 10 September: [README](https://github.com/CALLE-AI/awesome-phone-call-agents/blob/main/README.md) and [contribution guide](https://github.com/CALLE-AI/awesome-phone-call-agents/blob/main/CONTRIBUTING.md). Local validation does not mean the PR has been reviewed or merged. Issue #124 was filed with explicit user authorization and is open without comments as of 11 September; this checklist does not initiate further external actions.

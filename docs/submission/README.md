@@ -1,6 +1,6 @@
 # Before We Go submission checklist
 
-## Current status — 10 September 2026
+## Current status — 11 September 2026
 
 Completed evidence:
 
@@ -11,10 +11,10 @@ Completed evidence:
 
 Blocked or unresolved:
 
-- Two accepted real call requests failed with zero transcript. The user confirmed the first did not ring; whether the second rang is unconfirmed. No successful conversation is verified.
+- Three accepted tasks failed without transcripts. The user confirmed that neither of the two application-to-mobile attempts rang; ringing for the separate minimal diagnostic is unconfirmed. Alternate-India and official-US requests were rejected with HTTP 429 and did not create accepted tasks. No successful conversation is verified.
 - No public video. Public-access and eligibility questions await the user; judging access remains unresolved.
 - Devpost additional information was not persisted because requirements remain unresolved. The entry is not submitted.
-- Provider-support outreach is declined; no outreach is authorized. Prior dashboard observation of 100 credits does not establish current balance or call capacity.
+- User-authorized provider outreach was filed as [issue #124](https://github.com/CALLE-AI/call-e-integrations/issues/124); it is OPEN with no comments as of 11 September. No provider resolution is verified. Prior dashboard observation of 100 credits does not establish current balance or call capacity.
 
 ## Current product direction
 
@@ -26,7 +26,8 @@ The [official rules](https://call-e.devpost.com/rules), checked 10 September, sp
 
 ## Pack
 
-- `devpost-story.md`: honest draft narrative and evidence slots.
+- `devpost-ready-story.md`: polished public copy reflecting current evidence.
+- `devpost-story.md`: internal narrative/evidence working draft.
 - `demo-script.md`: 2:45 recording/edit plan; use actual verified footage.
 - `roleplay-scenario.md`: customer role-play and bounded fictional restaurant facts.
 - `judging-instructions-draft.md`: release-blocked testing handoff.
