@@ -66,3 +66,7 @@ The existing Timelords draft was renamed to Before We Go and its pitch saved; re
 ## Built-server workflow verification — 10 September
 
 All 13 app checks and typecheck passed. New test exercises the current production Worker over HTTP: unauthorized and wrong-origin rejection, immutable masked preview, explicit approval, single dispatch, duplicate rejection, structured result, cross-user denial, review requirement, exact persisted export and released terminal mutex. External network is disabled; this is application integration evidence, not real phone delivery or deployed judge authentication. README corrected one stale callee-role sentence.
+
+## Submission pack and account alignment
+
+All seven submission documents consolidated against source87b2ba6, PR430 and Devpost DRAFT2/5. Account masked key matches configured key, enabled and expires after judging; displayed balance remains100credits with zero usage charges. Public-site audience decision, personal eligibility confirmation and alternative authorized test number questions are pending. No further calls or support outreach.

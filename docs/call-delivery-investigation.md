@@ -22,3 +22,7 @@ The account Numbers page shows no purchased number. The public CALL-E FAQ discus
 
 - [Create Call API](https://docs.heycall-e.com/api-reference/calls)
 - [Official OpenAPI schema](https://docs.heycall-e.com/openapi/calle.openapi.yaml)
+
+## Account alignment check
+
+The configured API key matches the masked identifier of the enabled key in the signed-in CALL-E account. That key expires after the judging period. The account billing page still displays 100 credits and zero usage charges after the two failed tasks. This makes a wrong-account key or exhausted displayed balance less likely; it does not establish outbound route readiness or a credits-per-call conversion. No key value is published.
