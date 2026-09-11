@@ -1,3 +1,4 @@
+import {maskPhones} from './privacy.ts';
 import {restaurant} from './knowledge.ts';
 import {assess, type Turn} from './domain.ts';
 export const terminal=(s:string)=>['completed','failed','canceled'].includes(s);
@@ -19,5 +20,5 @@ export function normalizeProvider(data:any,venue:string,knowledge:typeof restaur
  }
  const result=assess('live role-play',venue,data.status,recipient?.structured_result,turns,knowledge);
  if(attempts.length>1)result.issues.push('Multiple provider attempts exist. Review the complete context for corrections and conflicting answers.');
- return result;
+ return maskPhones(result);
 }

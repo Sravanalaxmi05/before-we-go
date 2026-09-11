@@ -1,3 +1,4 @@
+import {maskPhones} from './privacy';
 import {env} from 'cloudflare:workers';
 import {getChatGPTUser} from '@/app/chatgpt-auth';
 export class HttpError extends Error{status:number;constructor(status:number,message:string){super(message);this.status=status}}
@@ -12,5 +13,5 @@ export function requireLive(){const c=config();if(!c.enabled||!c.key||!/^\+[1-9]
 export async function body(req:Request){if(Number(req.headers.get('content-length')??0)>8000)throw new HttpError(413,'Request too large');const t=await req.text();if(t.length>8000)throw new HttpError(413,'Request too large');try{return JSON.parse(t)}catch{throw new HttpError(400,'Invalid JSON')}}
 export function textField(v:unknown,name:string,max:number){if(typeof v!=='string'||!v.trim()||v.length>max)throw new HttpError(400,'Invalid '+name);return v.trim()}
 export async function hash(s:string){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))).map(x=>x.toString(16).padStart(2,'0')).join('')}
-export function json(x:unknown,status=200){return Response.json(x,{status,headers:{'Cache-Control':'no-store'}})}
+export function json(x:unknown,status=200){return Response.json(maskPhones(x),{status,headers:{'Cache-Control':'no-store'}})}
 export function failure(e:unknown){return json({error:e instanceof HttpError?e.message:'The operation could not be completed. No automatic retry was started.'},e instanceof HttpError?e.status:503)}
