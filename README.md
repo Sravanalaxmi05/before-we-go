@@ -12,7 +12,7 @@ Copy `.env.example` to `.env.local` and configure server-only values to enable l
 
 ## Test
 
-Run `pnpm build`, then `node --experimental-strip-types --test tests/*.test.ts`. The built-Worker test requires the current production output. All 13 checks run without live credentials or outbound calls.
+Run `pnpm build`, then `node --experimental-strip-types --test tests/*.test.ts`. The built-Worker test requires the current production output. All 15 application checks run without live credentials or outbound calls.
 
 The D1 claim test uses the installed Miniflare runtime to verify concurrent starts and transactional rollback. Domain tests cover provenance, wrong-speaker evidence, missing transcript and refusal. The built-Worker test runs the HTTP workflow through preview, approval, mocked CALL-E dispatch, result retrieval and persisted reviewed export, using isolated D1 state and disabled external networking. `pnpm exec tsc --noEmit` checks types.
 
@@ -38,3 +38,7 @@ Network ambiguity locks the call for operator reconciliation; no automatic resen
 Sample transcripts are synthetic. A live test, when enabled, calls a consenting person playing the CUSTOMER; CALL-E plays the fictional restaurant’s disclosed AI representative. A successful test would demonstrate the workflow, not actual venue accessibility or customer impact. No successful live conversation is currently claimed.
 
 Community contribution: [PR #430](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/430).
+
+## Public judging demo
+
+https://before-we-go-demo.sravanalaxmi05.workers.dev — no login, sample-only. Live call endpoints are disabled. See deployment/README.md for the separate public deployment configuration and its two additional guard tests.
