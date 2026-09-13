@@ -1,6 +1,6 @@
 # Publication and privacy boundaries
 
-The repository is being prepared for optional public source viewing. Visibility changes are separate from app deployment, account access and credential changes. The source remains private until publication is authorized and performed.
+The user authorized public visibility on 14 September 2026. GitHub reports this repository as public, verified without authentication. Visibility changes are separate from app deployment, account access and credential changes.
 
 - Never commit real credentials, recipient information, transcripts, database files or raw provider responses.
 - Use the public sample deployment for judging; it contains no live credentials or customer database.
