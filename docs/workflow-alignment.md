@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Workflow alignment — 10 September 2026
 
 User clarified that the customer asks questions and CALL-E represents the restaurant. This supersedes the original venue-interview role assignment. No calls should use the old restaurant-staff-recipient prompt. Existing code still implements that old direction and must be revised before live testing.

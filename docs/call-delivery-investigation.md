@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Call delivery investigation — 10 September 2026
 
 The user declined support outreach. No support message was sent.

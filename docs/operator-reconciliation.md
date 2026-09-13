@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Ambiguous dispatch recovery
 
 The application never automatically repeats a failed or timed-out create request. A reservation remains spent and the recipient remains locked while dispatch is uncertain.

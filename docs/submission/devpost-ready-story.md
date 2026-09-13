@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Before We Go
 
 Restaurant enquiry callbacks that keep customer needs, business facts and staff follow-up clear.

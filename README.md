@@ -2,7 +2,13 @@
 
 A customer enquiry triggers a callback from a disclosed restaurant AI representative. It explains a versioned fictional fact sheet, captures customer preferences and unresolved questions, and prepares a reviewed report for staff. It does not book tables, contact staff or claim live inventory.
 
-**Current status:** working synthetic evidence/review UI and server integration implementation. API authentication verified. One application call task was accepted by CALL-E but failed without a completed conversation. Its ID was recovered using the documented same-key/same-payload procedure. A separate minimal connectivity request also failed with no transcript. Successful conversation and judging access remain unverified. Fictional examples are labeled and never dial a number.
+**Status — 14 September 2026:** submitted to the CALL-E hackathon (Devpost confirmation received). The [public sample app](https://before-we-go-demo.sravanalaxmi05.workers.dev) works without login and uses labelled synthetic examples. Real API requests were accepted during development, but no successful phone conversation or transcript has been demonstrated. Later requests encountered account concurrency errors; [issue #124](https://github.com/CALLE-AI/call-e-integrations/issues/124) tracks the unresolved investigation. Source availability does not establish successful calling.
+
+- [Main product video](https://youtu.be/0ED70rKmPJc)
+- [Functional walkthrough](https://youtu.be/uPr4UWisoTQ)
+- [Community contribution, merged PR #430](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/430)
+
+See [current judging instructions](docs/submission/judging-instructions-draft.md), [security boundaries](SECURITY.md) and [reuse policy](RIGHTS.md). Earlier planning documents are historical records, not current operating instructions.
 
 ## Run locally
 
@@ -42,3 +48,9 @@ Community contribution: [PR #430](https://github.com/CALLE-AI/awesome-phone-call
 ## Public judging demo
 
 https://before-we-go-demo.sravanalaxmi05.workers.dev — no login, sample-only. Live call endpoints are disabled. See deployment/README.md for the separate public deployment configuration and its two additional guard tests.
+
+## Public deployment boundary
+
+Use only the guarded sample deployment described in [deployment/README.md](deployment/README.md) for the public demo. The private live routes depend on a trusted authentication gateway. Never expose those routes directly with real credentials or accept identity headers from arbitrary clients. Public source code does not give visitors access to private keys or recipient data.
+
+Run `node --test deployment/sample-guard.test.mjs` for the two additional public guard checks. Run `python3 scripts/audit-publication.py` before publishing any further commits.

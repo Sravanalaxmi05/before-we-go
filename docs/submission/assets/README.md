@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Project artwork
 
 `project-cover.png` is the Devpost cover image (1200 × 800, 3:2). It was rendered from the editable `project-cover.svg` and visually inspected. The example question is fictional. The artwork describes the prototype workflow, not a successful live call or a real restaurant's accessibility.

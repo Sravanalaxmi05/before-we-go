@@ -1,3 +1,5 @@
+> Historical development document. For current status, demo access and limitations, use the repository README. Earlier references to pending submission, private-only judging access or an open contribution PR are superseded.
+
 # Community contribution status
 
 [PR #430](https://github.com/CALLE-AI/awesome-phone-call-agents/pull/430) is OPEN. No reviews or hosted checks have appeared yet. The contribution’s separate 12-test suite and community repository validator passed locally. This is distinct from the app’s 13-test suite at source commit `87b2ba6`.
